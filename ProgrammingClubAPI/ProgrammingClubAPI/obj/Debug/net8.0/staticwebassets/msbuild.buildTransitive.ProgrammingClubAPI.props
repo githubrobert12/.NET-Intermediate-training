@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ProgrammingClubAPI.props" />
+</Project>
