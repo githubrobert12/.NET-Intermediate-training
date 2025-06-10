@@ -1,10 +1,14 @@
-﻿namespace ProgrammingClubAPI.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
+
+namespace ProgrammingClubAPI.Models
 {
     public class MembershipType
     {
-        public Guid IDMembershipType { get; set; }
-        public string Name { get; set; }
+        [Key]
+        public Guid IdMembershipType { get; set; }
+        public string? Name { get; set; }
         public string Description { get; set; }
-        public int SubscriptionLength { get; set; }
+        public int? SubscriptionLengthInMonths { get; set; }
     }
 }

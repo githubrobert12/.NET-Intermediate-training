@@ -1,11 +1,7 @@
-﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
-using System.ComponentModel.DataAnnotations;
-
-namespace ProgrammingClubAPI.Models
+﻿namespace ProgrammingClubAPI.Models.NewFolder
 {
-    public class Member
+    public class UpdateMemberPartially
     {
-        [Key]
         public Guid IdMember { get; set; }
         public string Name { get; set; }
         public string Title { get; set; }
